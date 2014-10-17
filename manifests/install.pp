@@ -36,12 +36,4 @@ node default {
              ruby => Rvm::Ruby['default']
   }
 
-  vcsrepo { '/home/vagrant/testing':
-            ensure => present,
-            provider => git,
-            source => 'https://github.com/kuali/kuality-ole.git',
-            revision => 'master',
-            user => 'vagrant'
-  }
-
 }

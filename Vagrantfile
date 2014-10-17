@@ -36,6 +36,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     shell.inline = "sudo apt-get -y update > update.$(date +%Y%m%d-%H%S)"
   end
 
+  # Create shared /pub directory.
+  config.vm.synced_folder "pub/","/pub/"
+
   # Use puppet to install RVM, Ruby, & Bundler
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = 'manifests'
