@@ -3,6 +3,17 @@
 
 ## Installation
 
+The creators of Vagrant have helpfully provided installers for all major operating systems:
+
+  https://docs.vagrantup.com/v2/installation/
+
+To use this Vagrant configuration, you'll need to install VirtualBox to serve as the provider
+for virtual machines.  There's a download link available from the Vagrant documentation, as
+well as a short note on which VirtualBox versions are compatible with the current release of
+Vagrant:
+
+  http://docs.vagrantup.com/v2/virtualbox
+
 With Vagrant installed and VirtualBox as a virtual machine provider, 
 clone this repository to your preferred Vagrant directory, then
 in a shell session, navigate to this directory and run:
